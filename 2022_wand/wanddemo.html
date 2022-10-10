@@ -12,14 +12,42 @@
 	<div id="map" style="height: 95%"></div>
   	<!-- code where we build the map and its functionality -->
 	<script>
-		var mymap = L.map('map').setView([47.258, -122.465], 12);
+		var mymap = L.map('map').setView([47.258, 8], 6);
 		var basemap = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}{r}.png', {
 			attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 		}).addTo(mymap);
+
+
 		var point = L.marker([47.258, -122.465]).addTo(mymap);
 			point.bindPopup("<b>Hello world!</b><br>I am a popup.");
 		var point = L.marker([50.63373,5.56749]).addTo(mymap);
 			point.bindPopup("<b>Liege</b>");
+
+		var point = L.marker([50.63373, 5.56749]).addTo(mymap);
+			point.bindPopup("<b>Liege</b>");
+		var point = L.marker([49.05389,5.99889]).addTo(mymap);
+			point.bindPopup("<b>Gorze</b>");
+		var point = L.marker([49.73797,6.63149]).addTo(mymap);
+			point.bindPopup("<b>Trier</b>");
+		var point = L.marker([50.94123,6.95823]).addTo(mymap);
+			point.bindPopup("<b>Cologne</b>");
+		var point = L.marker([50.20785,6.42019]).addTo(mymap);
+			point.bindPopup("<b>Prüm</b>");
+		var point = L.marker([49.99842,8.27456]).addTo(mymap);
+			point.bindPopup("<b>Mainz</b>");
+		var point = L.marker([52.1531,9.95553]).addTo(mymap);
+			point.bindPopup("<b>Hildesheim</b>");
+		var point = L.marker([50.86627,9.70224]).addTo(mymap);
+			point.bindPopup("<b>Hersfeld</b>");
+		var point = L.marker([50.55404,9.67038]).addTo(mymap);
+			point.bindPopup("<b>Fulda</b>");
+		var point = L.marker([49.8907,10.88253]).addTo(mymap);
+			point.bindPopup("<b>Bamberg</b>");
+		var point = L.marker([49.01513,12.10161]).addTo(mymap);
+			point.bindPopup("<b>Regensburg</b>");
+
+
+
   	</script>
 </body>
 </html>

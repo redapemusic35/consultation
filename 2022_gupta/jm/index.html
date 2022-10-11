@@ -10,7 +10,30 @@
 
 <body>
 	<div class="grid">
-		<div class= "text1">
+		<div class="header">Header to project</div>
+		<div class="sidebar">
+			<div>
+				<h2>Sidebar</h2>
+			</div>
+
+			<div>
+				<ul>
+					<li>Text1 <button onclick="toggle('1')" class="closebutton">X</button></li>
+					<li>Text2 <button onclick="toggle('2')" class="closebutton">X</button></li>
+					<li>Text3 <button onclick="toggle('3')" class="closebutton">X</button></li>
+					<li>Text4 <button onclick="toggle('4')" class="closebutton">X</button></li>
+					<li>Text5 <button onclick="toggle('5')" class="closebutton">X</button></li>
+					<li>Text6 <button onclick="toggle('6')" class="closebutton">X</button></li>
+					<li>Text7 <button onclick="toggle('7')" class="closebutton">X</button></li>
+					<li>Text8 <button onclick="toggle('8')" class="closebutton">X</button></li>
+					<li>Text9 <button onclick="toggle('9')" class="closebutton">X</button></li>
+					<li>Text10 <button onclick="toggle('10')" class="closebutton">X</button></li>
+				</ul>
+			</div>
+
+		</div>
+
+		<div class= "text1" id="1">
 			<div>
 				<p class="c3_1"><span class="c1_1">Bismillah hir rahman ir rahim. In the name of God, the most merciful, the most beneficent.</span></p><p class="c2_1"><span class="c1_1"></span></p><p class="c3_1"><span class="c1_1 c7_1">Honourable UN Secretary General Mr Ban Ki-moon, Respected President General Assembly Vuk Jeremic Honourable UN envoy for Global education Mr Gordon Brown, Respected elders and my dear brothers and sisters; Today, it is an honour for me to be speaking again after a long time. Being here with such honourable people is a great moment in my life.</span></p><p class="c2_1"><span class="c1_1"></span></p><p class="c3_1"><span class="c1_1 c4_1">I don&#39;t know where to begin my speech. I don&#39;t know what people would be expecting me to say. But first of all, thank you to God for whom we all are equal and thank you to every person who has prayed for my fast recovery and a new life. I cannot believe how much love people have shown me. I have received thousands of good wish cards and gifts from all over the world. Thank you to all of them. Thank you to the children whose innocent words encouraged me. Thank you to my elders whose prayers strengthened me.</span></p><p class="c2_1"><span class="c1_1"></span></p><p class="c3_1"><span class="c1_1 c5_1">I would like to thank my nurses, doctors and all of the staff of the hospitals in Pakistan and the UK and the UAE government who have helped me get better and recover my strength. I fully support Mr Ban Ki-moon the Secretary-General in his Global Education First Initiative and the work of the UN Special Envoy Mr Gordon Brown. And I thank them both for the leadership they continue to give. They continue to inspire all of us to action.</span></p><p class="c2_1"><span class="c1_1"></span></p><p class="c3_1"><span class="c6_1">There are hundreds of human rights activists and social workers who are not only speaking for human rights, but who are struggling to achieve their goals of education, peace and equality. Thousands of people have been killed by the terrorists and millions have been injured. I am just one of them.</span></p>
 			</div>
@@ -29,7 +52,7 @@
 		</div>
 
 
-		<div class = "text10">
+		<div class = "text10" id="10">
 			<div>
 				<p class="c4_10"><span class="c0_10 c3_10">Bismillah hir rahman ir rahim. In the name of God, the most merciful, the most beneficent.</span></p><p class="c2_10"><span class="c0_10"></span></p><p class="c4_10"><span class="c5_10 c6_10">Honourable UN Secretary General Mr Ban Ki-moon, Respected President General Assembly Vuk Jeremic Honourable UN envoy for Global education Mr Gordon Brown, Respected elders and my dear brothers and sisters; Today, it is an honour for me to be speaking again after a long time. </span><span class="c0_10 c3_10">Being here with such honourable people is a great moment in my life.</span></p><p class="c2_10"><span class="c0_10"></span></p><p class="c4_10"><span class="c5">I don&#39;t know where to begin my speech. I don&#39;t know what people would be expecting me to say. </span><span class="c0_10 c3_10">But first of all, thank you to God for whom we all are equal and thank you to every person who has prayed for my fast recovery and a new life. I cannot believe how much love people have shown me. I have received thousands of good wish cards and gifts from all over the world. Thank you to all of them. Thank you to the children whose innocent words encouraged me. Thank you to my elders whose prayers strengthened me.</span></p><p class="c2_10"><span class="c0_10"></span></p><p class="c4_10"><span class="c1_10">I would like to thank my nurses, doctors and all of the staff of the hospitals in Pakistan and the UK and the UAE government who have helped me get better and recover my strength. I fully support Mr Ban Ki-moon the Secretary-General in his Global Education First Initiative and the work of the UN Special Envoy Mr Gordon Brown. And I thank them both for the leadership they continue to give.</span><span class="c0_10">&nbsp;They continue to inspire all of us to action.</span></p><p class="c2_10"><span class="c0_10"></span></p><p class="c4_10"><span class="c1_10">There are hundreds of human rights activists and social workers who are not only speaking for human rights, but who are struggling to achieve their goals of education, peace and equality. Thousands of people have been killed by the terrorists and millions have been injured.</span><span class="c5_10">&nbsp;</span><span class="c5_10 c6_10">I am</span><span class="c5_10 c7_10">&nbsp;just one of them</span><span class="c0_10 c6_10">.</span></p><p class="c2_10"><span class="c0_10"></span></p><p class="c2_10"><span class="c8_10"></span></p>
 			</div>
@@ -40,3 +63,15 @@
 </body>
 
 </html>
+
+<script>
+// the buttons that open and close sections
+function toggle(id) {
+  var state = document.getElementById(id).style.display;
+    if (state == 'block') {
+      document.getElementById(id).style.display = 'none';
+    } else {
+      document.getElementById(id).style.display = 'block';
+    }
+  }
+</script> 

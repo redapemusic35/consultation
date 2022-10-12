@@ -1,0 +1,75 @@
+<html><head>
+    <meta charset="utf-8">
+    <title>Meha</title>
+    <!-- jQuery from the Google CDN. -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <!-- Bootstrap CSS & JS from the Bootstrap CDN. -->
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <style type="text/css">
+      body {
+        margin: 2.5em auto 10em auto;
+        width: 50em;
+        max-width: 90%;
+      }
+      h2 { margin-top: 1.5em; }
+      h3 { margin-top: 1.25em; }
+      h4 { margin-top: 1em; }
+      h5 { margin-top: 0.75em; }
+      h6 { margin-top: 0.5em; }
+      hr { margin: 5em 0; }
+      #footer {
+        margin-top: 5em;
+        opacity: 0.5;
+        line-height: 2.5em;
+      }
+      #footer:hover { opacity: 1.0; }
+    </style>
+  </head>
+  <body style="">
+    <div id="content">
+     <h1>Doccano Deployment Tutorial for Meha Gupta Sentiment Annotation Project</h1>
+
+<ol>
+<li><p>This requires git, github, and docker command-line interface</p>	
+<li><p>Navigate to <a href="https://github.com/doccano/doccano">github.com/doccano/doccano</a></p></li>
+<li><p>fork <a href="https://github.com/doccano/doccano">github.com/doccano/doccano</a></p></li>
+<li><p>git clone your fork of doccano</p></li>
+<li><p>cd into cloned project</p></li>
+<li><p>create <code>.env</code> in root of cloned project with the following contents:</p></li>
+</ol>
+
+<!-- An innocent comment to force Markdown out of list parsing mode. See also http://meta.stackoverflow.com/a/99637 -->
+
+<pre><code>    # platform settings
+ADMIN_USERNAME=admin
+ADMIN_PASSWORD=password
+ADMIN_EMAIL=admin@example.com
+
+# rabbit mq settings
+RABBITMQ_DEFAULT_USER=doccano
+RABBITMQ_DEFAULT_PASS=doccano
+
+# database settings
+POSTGRES_USER=doccano
+POSTGRES_PASSWORD=doccano
+POSTGRES_DB=doccano
+</code></pre>
+
+<ol>
+<li><p>run this command in your terminal <code>docker-compose -f docker/docker-compose.prod.yml --env-file .env up</code></p></li>
+<li><p>then access <a href="http://127.0.0.1/](http://127.0.0.1/">[127.0.0.1/](http://127.0.0.1/</a>)</p></li>
+<li><p>Inspect to see working</p></li>
+<li><p>then click "Deploy to Heroku" button.</p></li>
+<li><p>will take you to heroku, create free account</p></li>
+<li><p>go back to heroku and click deploy button again</p></li>
+<li><p>site will run after 10 minutes or so</p></li>
+</ol>
+    </div>
+    <div id="footer">
+      Exported by <a href="http://peterodding.com/code/vim/notes/" class="btn">vim-notes 0.33.4</a>
+      on Wednesday October 12, 2022 at 13:33 based on the note <code>~/1-2021-22-Projects/vimnotes/misc/notes/user/Meha.md</code>.
+    </div>
+  
+
+</body></html>
